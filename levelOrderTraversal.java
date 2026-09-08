@@ -75,6 +75,30 @@ public class levelOrderTraversal {
     }
 
 
+    // count total number of Nodes in a tree
+    public static int countNode(Node root){
+        if(root==null){
+            return 0;
+        }
+        int leftNodeCount=countNode(root.left);
+        int rightNodeCount=countNode(root.right);
+
+        return leftNodeCount+rightNodeCount+1;
+    }
+
+
+    // calculate total sum of all nodes
+    public static int sumOfNodes(Node root){
+        if(root==null){
+            return 0;
+        }
+
+        int leftNodesSum=sumOfNodes(root.left);
+        int rightNodesSum=sumOfNodes(root.right);
+
+        return leftNodesSum+rightNodesSum+root.data;
+    }
+
 
     public static void main(String[] args) {
 
@@ -83,6 +107,11 @@ public class levelOrderTraversal {
         Node tree=buildTree(node);
 
         levelOrderTraversal(tree);
+        System.out.println();
+
+        System.out.println(countNode(tree));
+
+        System.out.println(sumOfNodes(tree));
 
     }
 }
