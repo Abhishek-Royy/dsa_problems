@@ -112,6 +112,7 @@ public class levelOrderTraversal {
         System.out.println(countNode(tree));
 
         System.out.println(sumOfNodes(tree));
+        System.out.println();
 
     }
 }
