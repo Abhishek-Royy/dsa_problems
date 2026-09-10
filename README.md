@@ -20,7 +20,7 @@ The repository contains Java implementations of various:
 * Queues
 * Hashing
 * Trees
-* Graphs
+* Graphs [Difficult to learn, facing issues]
 * Dynamic Programming
 * Common coding interview problems
 * LeetCode-style problems
