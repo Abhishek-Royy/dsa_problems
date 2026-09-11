@@ -61,7 +61,7 @@ public class graphConcept1 {
 
         int v = 4;
 
-        // Array of ArrayLists
+        // Array of ArrayListsssss
         ArrayList<Node> graph[] = new ArrayList[v];
 
         createGraph(graph);
